@@ -1,35 +1,25 @@
 # ECE 484 Final Individual Project - Pinball Scoring System
 
-# Special Note #
-Before getting started it should be mentioned that there are two different scoring systems. One for single player pinball games solely displaying your score while playing and after the game is over. Second is specifically designed for the two player pinball game my group and I designed for our ECE 484 Final Project. The score for the second version functions as follows. Player 1 will score based on touch sensors hit as well as crossing a path being sensed by an ultrasonic sensor. Player 2 will start off with a maximum amount of points, which will also be the ceiling of player 1's score, and the score will decrese as time goes on in the game since they are playing defense. Once player two is able to get the ball past player 1's flippers and the game ends, their score will be calculated based on maximum score - (time taken in minutes and seconds * loss per second). Throughout this README and the wiki I will include everything needed to complete both versions.
-
-# Getting Started
-## The following are needed in order to perform this project for the single player mode
-1. One Touch Sensor
-2. Two Ultrasonic Sensors
+## The following are needed in order to perform this project
+1. 1 Touch Sensor
+2. 2 Ultrasonic Sensors
 3. 1 Arduino
 4. 1 LCD Display
-5. The Arduino IDE which can be installed [here](https://www.arduino.cc/en/software)
-6. Git which can be installed [here](https://git-scm.com/downloads)
+5. Either 1 I2C Serial LCD Module or 1 Potentiometer 
+6. Aluminum Foil Tape/Conductive Tape
+7. The Arduino IDE which can be installed [here](https://www.arduino.cc/en/software)
+8. Git which can be installed [here](https://git-scm.com/downloads)
 
-## The following are needed in order to perform this project for the two player mode
-1. One Touch Sensor
-2. Two Ultrasonic Sensors
-3. 2 Arduinos
-4. 2 LCD Displays
-5. 1 Push Button
-6. The Arduino IDE which can be installed [here](https://www.arduino.cc/en/software)
-7. Git which can be installed [here](https://git-scm.com/downloads)
+## Note: For this project I used an LCD with an I2C LCD Module not a potentiometer. You will need more pins to use an LCD with a potentiometer.
 
-### Notes
+# About the Scoring
+This scoring mechanism is designed for my final group project in my course ECE 484, embedded systems. The scoring mechanism provided here is made to give the player using the flippers a chance to score points throughout a pinball game, however it is very high stakes... There are four elements that make up this system. First being the LCD as that displays the players score and it will increment with every instance of scoring points. Second being the touch sensor as every time the pinball will touch the sensor it will give the player a point. Third being the goal ultrasonic sensor, this sensor is intended to be blocked by player 2 in our pinball game and increments when the ball passes by it. Finally the last element is the last ultrasonic sensor, positioned behind the flippers, this sensor will end the game if the ball passes through it bringing a high stakes element to this pinball game. 
 
-
-### WILL FILL OUT MORE CONTENTS FOR FINAL VERSION & WIKI WILL BE STRUCTURED WITH PROJECT DESIGN
-
+*To find a low level overview of the scoring system along with schematics visit my [wiki](https://github.com/MOconnorUS/ece484_final_individual_project/wiki)*
 ---
 
 # After completed everything above, the following will allow you to access and run the project
-Now that the installations are all complete and your pinball machine is assembled. All that is left for you to do is clone the repository!
+Now that the installations are all complete and you have your components. All that is left for you to do is clone the repository!
 
 # How to clone the repository
 1. Open Command prompt type `cmd` into the search bar on your windows device
