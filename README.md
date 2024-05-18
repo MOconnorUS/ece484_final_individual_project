@@ -15,7 +15,7 @@
 # About the Scoring
 This scoring mechanism is designed for my final group project in my course ECE 484, embedded systems. The scoring mechanism provided here is made to give the player using the flippers a chance to score points throughout a pinball game, however it is very high stakes... There are four elements that make up this system. First being the LCD as that displays the players score and it will increment with every instance of scoring points. Second being the touch sensor as every time the pinball will touch the sensor it will give the player a point. Third being the goal ultrasonic sensor, this sensor is intended to be blocked by player 2 in our pinball game and increments when the ball passes by it. Finally the last element is the last ultrasonic sensor, positioned behind the flippers, this sensor will end the game if the ball passes through it bringing a high stakes element to this pinball game. 
 
-*To find a low level overview of the scoring system along with schematics visit my [wiki](https://github.com/MOconnorUS/ece484_final_individual_project/wiki)*
+*To find a low level overview of the scoring system along with schematics visit my [wiki](https://github.com/MOconnorUS/ece484_final_individual_project/wiki/Scoring-System)*
 ---
 
 # After completed everything above, the following will allow you to access and run the project
